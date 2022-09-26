@@ -19,7 +19,13 @@ body {
 }
 
 .turkey img {
+    width: 80%;
+    max-width: 450px;
     opacity: .6;
+}
+
+.header {
+    margin: 0 auto;
 }
 
 .header h1 {
@@ -30,7 +36,7 @@ body {
 }
 
 #input {
-    width: 23rem;
+    width: 20rem;
     border: none;
     padding: 5px;
     background-color: rgba(131, 167, 228, 0.103);
@@ -50,18 +56,18 @@ body {
     font-weight: 500;
 }
 
+
 .countries {
+    padding-left: 10%;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 
 .cards {
     padding: 2rem;
     margin: 1rem;
-    min-width: 14rem;
+    width: 14rem;
     background-color: rgba(240, 248, 255, 0.63);
     border-radius: 10px;
     height: 23rem;
