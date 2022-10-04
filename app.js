@@ -38,7 +38,8 @@ function updateDom(d) {
     main: { temp },
     weather,
   } = d;
-  countries.innerHTML += `
+  countries.innerHTML =
+    `
   <div class="cards">
     <h5>${
       input.value.charAt(0).toUpperCase() + input.value.slice(1).toLowerCase()
@@ -47,7 +48,7 @@ function updateDom(d) {
     <img src="./img/${weather[0].description}.png" width="80px" alt="">
     <p class="w-desc">${weather[0].description.toUpperCase()}</p>
   </div>
-  `;
+  ` + countries.innerHTML;
   countryList.push(input.value.toLowerCase());
   input.value = "";
   message.innerHTML = "";
